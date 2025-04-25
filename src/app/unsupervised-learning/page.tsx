@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 const UnsupervisedLearningPage = () => {
   return (
     <div className="container mx-auto py-12">
@@ -19,22 +21,24 @@ const UnsupervisedLearningPage = () => {
         <h2 className="text-2xl font-semibold mb-4">Models</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           {/* Add cards for each model here */}
-          <ModelCard title="K-means Clustering" description="Partitions data into k clusters." />
-          <ModelCard title="Hierarchical Clustering" description="Builds a hierarchy of clusters." />
-          <ModelCard title="Principal Component Analysis (PCA)" description="Reduces dimensionality by finding principal components." />
-          <ModelCard title="t-SNE" description="Reduces dimensionality for visualization." />
-          <ModelCard title="DBSCAN" description="Finds density-based clusters." />
-          <ModelCard title="Autoencoders" description="Learns compressed data representations." />
+          <ModelCard title="K-means Clustering" description="Partitions data into k clusters." href="/unsupervised-learning/kmeans" />
+          <ModelCard title="Hierarchical Clustering" description="Builds a hierarchy of clusters." href="/unsupervised-learning/hierarchical-clustering" />
+          <ModelCard title="Principal Component Analysis (PCA)" description="Reduces dimensionality by finding principal components." href="/unsupervised-learning/pca" />
+          <ModelCard title="t-SNE" description="Reduces dimensionality for visualization." href="/unsupervised-learning/tsne" />
+          <ModelCard title="DBSCAN" description="Finds density-based clusters." href="/unsupervised-learning/dbscan" />
+          <ModelCard title="Autoencoders" description="Learns compressed data representations." href="/unsupervised-learning/autoencoders" />
         </div>
       </section>
     </div>
   );
 };
 
-const ModelCard = ({ title, description }: { title: string; description: string }) => {
+const ModelCard = ({ title, description, href }: { title: string; description: string; href: string }) => {
   return (
     <div className="border rounded-md p-4">
-      <h3 className="text-xl font-semibold mb-2">{title}</h3>
+      <h3 className="text-xl font-semibold mb-2">
+        <Link href={href}>{title}</Link>
+      </h3>
       <p className="text-sm text-muted-foreground">{description}</p>
     </div>
   );

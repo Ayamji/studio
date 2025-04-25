@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 const ReinforcementLearningPage = () => {
   return (
     <div className="container mx-auto py-12">
@@ -20,22 +22,24 @@ const ReinforcementLearningPage = () => {
         <h2 className="text-2xl font-semibold mb-4">Concepts/Models</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           {/* Add cards for each model here */}
-          <ModelCard title="Markov Decision Process (MDP)" description="A mathematical framework for decision-making." />
-          <ModelCard title="Q-learning" description="An algorithm to learn a Q-function." />
-          <ModelCard title="SARSA" description="Another algorithm to learn a Q-function." />
-          <ModelCard title="Deep Q-Networks (DQN)" description="Q-learning with neural networks." />
-          <ModelCard title="Policy Gradient Methods" description="Optimizes the policy directly." />
-          <ModelCard title="Actor-Critic Methods" description="Combines policy gradient and value-based methods." />
+          <ModelCard title="Markov Decision Process (MDP)" description="A mathematical framework for decision-making." href="/reinforcement-learning/mdp" />
+          <ModelCard title="Q-learning" description="An algorithm to learn a Q-function." href="/reinforcement-learning/q-learning" />
+          <ModelCard title="SARSA" description="Another algorithm to learn a Q-function." href="/reinforcement-learning/sarsa" />
+          <ModelCard title="Deep Q-Networks (DQN)" description="Q-learning with neural networks." href="/reinforcement-learning/dqn" />
+          <ModelCard title="Policy Gradient Methods" description="Optimizes the policy directly." href="/reinforcement-learning/policy-gradient" />
+          <ModelCard title="Actor-Critic Methods" description="Combines policy gradient and value-based methods." href="/reinforcement-learning/actor-critic" />
         </div>
       </section>
     </div>
   );
 };
 
-const ModelCard = ({ title, description }: { title: string; description: string }) => {
+const ModelCard = ({ title, description, href }: { title: string; description: string; href: string }) => {
   return (
     <div className="border rounded-md p-4">
-      <h3 className="text-xl font-semibold mb-2">{title}</h3>
+      <h3 className="text-xl font-semibold mb-2">
+        <Link href={href}>{title}</Link>
+      </h3>
       <p className="text-sm text-muted-foreground">{description}</p>
     </div>
   );
