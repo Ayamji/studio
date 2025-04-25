@@ -10,21 +10,33 @@ const MDPPage = () => {
       <section className="mb-8">
         <h2 className="text-2xl font-semibold mb-4">Key Concepts</h2>
         <ul className="list-disc list-inside">
-          <li>States: The possible situations in which the agent can be.</li>
-          <li>Actions: The decisions that the agent can make.</li>
-          <li>Rewards: The feedback signal that the agent receives for its actions.</li>
+          <li><b>States:</b> The possible situations in which the agent can be.</li>
+          <li><b>Actions:</b> The decisions that the agent can make.</li>
+          <li><b>Rewards:</b> The feedback signal that the agent receives for its actions.</li>
         </ul>
       </section>
 
       <section>
-        <h2 className="text-2xl font-semibold mb-4">Applications</h2>
+        <h2 className="text-2xl font-semibold mb-4">Advantages</h2>
         <p className="text-lg mb-4">
-          MDPs are used in various fields, such as:
+          MDPs are very useful because they have some properties:
         </p>
         <ul className="list-disc list-inside">
-          <li>Robotics: Controlling robots and enabling them to perform tasks autonomously.</li>
-          <li>Game Playing: Developing AI agents that can play games.</li>
-          <li>Resource Management: Optimizing the allocation of resources.</li>
+          <li>They provide a formal framework for decision-making.</li>
+          <li>They can be used to model a wide variety of problems.</li>
+          <li>There are many algorithms available to solve MDPs.</li>
+        </ul>
+      </section>
+
+       <section>
+        <h2 className="text-2xl font-semibold mb-4">Disadvantages</h2>
+        <p className="text-lg mb-4">
+          MDPs also have some disadvantages:
+        </p>
+        <ul className="list-disc list-inside">
+          <li>They can be difficult to model complex problems.</li>
+          <li>They can be computationally expensive to solve.</li>
+          
         </ul>
       </section>
     </div>
@@ -32,3 +44,4 @@ const MDPPage = () => {
 };
 
 export default MDPPage;
+

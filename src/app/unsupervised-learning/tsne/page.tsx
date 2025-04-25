@@ -1,4 +1,5 @@
 
+
 const tSNEPage = () => {
   return (
     <div className="container mx-auto py-12">
@@ -10,21 +11,31 @@ const tSNEPage = () => {
       <section className="mb-8">
         <h2 className="text-2xl font-semibold mb-4">Key Concepts</h2>
         <ul className="list-disc list-inside">
-          <li>Dimensionality Reduction: Reducing the number of variables while preserving the structure of the data.</li>
-          <li>Visualization: Representing high-dimensional data in a low-dimensional space for visualization purposes.</li>
-          <li>Non-linear: Capturing non-linear relationships in the data.</li>
+          <li><b>Dimensionality Reduction:</b> Reducing the number of variables while preserving the structure of the data.</li>
+          <li><b>Visualization:</b> Representing high-dimensional data in a low-dimensional space for visualization purposes.</li>
+          <li><b>Non-linear:</b> Capturing non-linear relationships in the data.</li>
         </ul>
       </section>
 
       <section>
-        <h2 className="text-2xl font-semibold mb-4">Applications</h2>
+        <h2 className="text-2xl font-semibold mb-4">Advantages</h2>
         <p className="text-lg mb-4">
-          t-SNE is used in various fields, such as:
+         t-SNE is used because
         </p>
         <ul className="list-disc list-inside">
-          <li>Bioinformatics: Visualizing gene expression data.</li>
-          <li>Natural Language Processing: Visualizing word embeddings.</li>
-          <li>Image Processing: Visualizing image features.</li>
+          <li>It can be used to visualize high-dimensional data in a low-dimensional space.</li>
+          <li>It can capture non-linear relationships in the data.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2 className="text-2xl font-semibold mb-4">Disadvantages</h2>
+        <p className="text-lg mb-4">
+          t-SNE also has some disadvantages:
+        </p>
+        <ul className="list-disc list-inside">
+          <li>It can be computationally expensive to run.</li>
+          <li>It can be sensitive to the choice of parameters.</li>
         </ul>
       </section>
     </div>
@@ -32,3 +43,4 @@ const tSNEPage = () => {
 };
 
 export default tSNEPage;
+

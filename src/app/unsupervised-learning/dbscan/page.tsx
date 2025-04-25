@@ -1,4 +1,5 @@
 
+
 const DBSCANPage = () => {
   return (
     <div className="container mx-auto py-12">
@@ -10,21 +11,33 @@ const DBSCANPage = () => {
       <section className="mb-8">
         <h2 className="text-2xl font-semibold mb-4">Key Concepts</h2>
         <ul className="list-disc list-inside">
-          <li>Core Points: Points with a minimum number of neighbors within a given radius.</li>
-          <li>Border Points: Points that are within the radius of a core point but do not have enough neighbors to be core points themselves.</li>
-          <li>Noise Points: Points that are neither core points nor border points.</li>
+          <li><b>Core Points:</b> Points with a minimum number of neighbors within a given radius.</li>
+          <li><b>Border Points:</b> Points that are within the radius of a core point but do not have enough neighbors to be core points themselves.</li>
+          <li><b>Noise Points:</b> Points that are neither core points nor border points.</li>
         </ul>
       </section>
 
       <section>
-        <h2 className="text-2xl font-semibold mb-4">Applications</h2>
+        <h2 className="text-2xl font-semibold mb-4">Advantages</h2>
         <p className="text-lg mb-4">
-          DBSCAN is used in various fields, such as:
+          DBSCAN is used because:
         </p>
         <ul className="list-disc list-inside">
-          <li>Anomaly Detection: Identifying outliers in data.</li>
-          <li>Spatial Data Analysis: Clustering geographic data.</li>
-          <li>Image Segmentation: Segmenting images based on pixel density.</li>
+          <li>It does not require the number of clusters to be specified in advance.</li>
+          <li>It can find clusters of arbitrary shape.</li>
+          <li>It is robust to outliers.</li>
+        </ul>
+      </section>
+
+       <section>
+        <h2 className="text-2xl font-semibold mb-4">Disadvantages</h2>
+        <p className="text-lg mb-4">
+          DBSCAN also has some disadvantages:
+        </p>
+        <ul className="list-disc list-inside">
+          <li>It can be sensitive to the choice of parameters.</li>
+          <li>It can be difficult to cluster data with varying densities.</li>
+          
         </ul>
       </section>
     </div>
@@ -32,3 +45,4 @@ const DBSCANPage = () => {
 };
 
 export default DBSCANPage;
+
