@@ -1,5 +1,7 @@
-# Firebase Studio
+# Ayam Studio
 
-This is a NextJS starter in Firebase Studio.
+This is a web-app named ML-NAVIGATOR.
+It contains everything around Ml and its resources.
 
-To get started, take a look at src/app/page.tsx.
+
+
