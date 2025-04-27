@@ -14,7 +14,6 @@
 - Use a clean, modern layout with clear sectioning for each ML topic.
 - Consistent and simple icons to represent each learning module and model.
 
-## Original User Request:
 1. Homepage
 Brief intro to Machine Learning.
 
@@ -64,40 +63,4 @@ K-means Clustering
 Hierarchical Clustering
 
 Principal Component Analysis (PCA)
-
-t-SNE
-
-DBSCAN
-
-Autoencoders (as intro to unsupervised deep learning)
-
-📙 Reinforcement Learning
-Explain:
-
-Definition: learning through interaction with environment, rewards/punishments.
-
-Key terms: Agent, Environment, Reward, Policy
-
-Concepts/Models:
-
-Markov Decision Process (MDP)
-
-Q-learning
-
-SARSA
-
-Deep Q-Networks (DQN)
-
-Policy Gradient Methods
-
-Actor-Critic Methods
-
-🔷 Optional Additions
-Interactive Demos: Try embedding plots or playgrounds (e.g., TensorFlow.js, sklearn widgets).
-
-Visuals/Diagrams: Flowcharts and graphs from the CS229 notes could be re-drawn as SVGs or interactive graphics.
-
-Blog/Tutorials Section: Where you explain each topic in a digestible way.
-
-Glossary: Common terms with short definitions.
   
